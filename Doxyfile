@@ -1,0 +1,14 @@
+PROJECT_NAME           = "AgendaFacil"
+PROJECT_BRIEF          = "Agenda de atendimentos de uma clinica pequena"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = src
+FILE_PATTERNS          = *.hpp *.cpp
+RECURSIVE              = NO
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+OUTPUT_LANGUAGE        = Brazilian
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = YES
+HAVE_DOT               = NO

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AgendaFacil: Referência da Classe Agenda</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AgendaFacil
+   </div>
+   <div id="projectbrief">Agenda de atendimentos de uma clinica pequena</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="classAgenda-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência da Classe Agenda</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Guarda os atendimentos em memoria e aplica as regras da clinica.  
+ <a href="classAgenda.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="agenda_8hpp_source.html">agenda.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a68f0bb648251f5385607ac4479d8fafd" id="r_a68f0bb648251f5385607ac4479d8fafd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAgenda.html#a68f0bb648251f5385607ac4479d8fafd">marcar</a> (const std::string &amp;paciente, const std::string &amp;profissional, const std::string &amp;data, int hora, int duracao)</td></tr>
+<tr class="memdesc:a68f0bb648251f5385607ac4479d8fafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marca um novo atendimento.  <br /></td></tr>
+<tr class="separator:a68f0bb648251f5385607ac4479d8fafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d5f70d5a085f8fd746565a2b723107" id="r_a86d5f70d5a085f8fd746565a2b723107"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAgenda.html#a86d5f70d5a085f8fd746565a2b723107">remarcar</a> (const std::string &amp;paciente, const std::string &amp;data, int hora, const std::string &amp;novaData, int novaHora)</td></tr>
+<tr class="memdesc:a86d5f70d5a085f8fd746565a2b723107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muda a data e a hora de um atendimento ja marcado.  <br /></td></tr>
+<tr class="separator:a86d5f70d5a085f8fd746565a2b723107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac21244442af78820919f911242d77c5" id="r_aac21244442af78820919f911242d77c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structAtendimento.html">Atendimento</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAgenda.html#aac21244442af78820919f911242d77c5">listarPorData</a> (const std::string &amp;data) const</td></tr>
+<tr class="memdesc:aac21244442af78820919f911242d77c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista os atendimentos de um dia.  <br /></td></tr>
+<tr class="separator:aac21244442af78820919f911242d77c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Guarda os atendimentos em memoria e aplica as regras da clinica. </p>
+</div><h2 class="groupheader">Documentação das funções</h2>
+<a id="aac21244442af78820919f911242d77c5" name="aac21244442af78820919f911242d77c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac21244442af78820919f911242d77c5">&#9670;&#160;</a></span>listarPorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structAtendimento.html">Atendimento</a> &gt; Agenda::listarPorData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista os atendimentos de um dia. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data no formato AAAA-MM-DD. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Os atendimentos do dia, na ordem em que foram marcados. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>se a data for invalida. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68f0bb648251f5385607ac4479d8fafd" name="a68f0bb648251f5385607ac4479d8fafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f0bb648251f5385607ac4479d8fafd">&#9670;&#160;</a></span>marcar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Agenda::marcar </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>paciente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>profissional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hora</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duracao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Marca um novo atendimento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paciente</td><td>Nome do paciente (nao pode ser vazio). </td></tr>
+    <tr><td class="paramname">profissional</td><td>Nome do profissional (nao pode ser vazio). </td></tr>
+    <tr><td class="paramname">data</td><td>Data no formato AAAA-MM-DD. </td></tr>
+    <tr><td class="paramname">hora</td><td>Hora de inicio, de 8 a 17. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Duracao em minutos: de 15 a 120, multiplo de 15, terminando ate as 18h. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se o atendimento foi marcado; false se o profissional ja tem atendimento nesse dia e hora. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>se algum parametro for invalido. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86d5f70d5a085f8fd746565a2b723107" name="a86d5f70d5a085f8fd746565a2b723107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d5f70d5a085f8fd746565a2b723107">&#9670;&#160;</a></span>remarcar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Agenda::remarcar </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>paciente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hora</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>novaData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>novaHora</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Muda a data e a hora de um atendimento ja marcado. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paciente</td><td>Nome do paciente do atendimento. </td></tr>
+    <tr><td class="paramname">data</td><td>Data atual do atendimento (AAAA-MM-DD). </td></tr>
+    <tr><td class="paramname">hora</td><td>Hora atual do atendimento. </td></tr>
+    <tr><td class="paramname">novaData</td><td>Nova data (AAAA-MM-DD). </td></tr>
+    <tr><td class="paramname">novaHora</td><td>Nova hora de inicio, de 8 a 17. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se foi remarcado; false se o profissional ja tem atendimento na nova data e hora. </dd></dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>se algum parametro for invalido. </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>se nao existir o atendimento informado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>src/<a class="el" href="agenda_8hpp_source.html">agenda.hpp</a></li>
+<li>src/<b>agenda.cpp</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
